@@ -1,0 +1,94 @@
+/* You can add global styles to this file, and also import other style files */
+$color-mdgrey: rgb(167, 161, 161);
+$color-darkgrey: rgb(104, 100, 100);
+$color-white: rgb(255, 255, 255);
+$color-lightred: rgb(245, 84, 84);
+
+
+@import 'config';
+@import 'responsive';
+
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+html, body { height: 100%;
+box-sizing: border-box; 
+margin: 0;
+padding: 0;}
+body { 
+  margin: 0; 
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.8rem;
+}
+p {
+  font-size: 1rem;
+  font-weight: 100;
+  color: $color-mdgrey;
+}
+h1, h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+h3 {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+strong {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.white {
+  background: none;
+  color: white;
+  border: none;
+}
+.active {
+ border: solid 1px $color-lightred;
+ border-radius: 5px;
+}
+.container-80 {
+  max-width: 80vw;
+  margin: 30px auto;
+  padding: 0 2rem;
+}
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.flex-space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 22px;
+}
+.shadow {
+  -webkit-box-shadow: 1px 3px 5px 2px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    1px 3px 5px 2px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         1px 3px 5px 2px #ccc;
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.btn-success {
+  min-width: 150px;
+  font: $color-white;
+  font-size: 1rem;
+  padding: 5px 20px;
+  border: $color-white 1px solid;
+  border-radius: 5px;
+  background: green;
+}
